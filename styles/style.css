@@ -1,0 +1,271 @@
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#github-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #4183c6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#panel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: hidden;
+  width: 80vw;
+  height: 80vh;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+}
+
+#panel::-webkit-scrollbar {
+  display: none;
+}
+
+#p-top {
+  padding: 0% 10%;
+  display: flex;
+  width: 100%;
+  height: 13%;
+  justify-content: space-evenly;
+}
+
+.elem {
+  display: flex;
+  align-items: center;
+  gap: 15%;
+}
+
+.elem .box {
+  padding: 5% 15%;
+}
+
+.box {
+  font-weight: 700;
+  font-size: 150%;
+  padding: 3% 3%;
+  border-radius: 5px;
+}
+
+#p-btm {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: scroll;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2%;
+  width: 100%;
+  height: 88%;
+  gap: 2% 2%;
+}
+
+.end {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#p-btm::-webkit-scrollbar {
+  display: none;
+}
+
+.bubble {
+  font-size: 130%;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  font-weight: 500;
+  animation: popout 0.5s ease-in-out;
+  -webkit-animation: popout 0.5s ease-in-out;
+}
+
+.bubble:hover {
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 1% 1%;
+  border-radius: 3px;
+  display: inline-block;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 130%;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  position: relative;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.8;
+}
+
+.sele {
+  padding: 0.5%;
+  font-size: 90%;
+}
+
+.link {
+  --primary: #6965db;
+  --primary-hover: #5753d0;
+  --primary-bg-color: white;
+  --secondary-bg-color: #f0efff;
+  --selected-bg-color: #e0dfff;
+  --primary-text-color: #27272c;
+  --secondary-text-color: #b8b8b8;
+  --highlight-color: #030064;
+  --border-color: #e7e6f7;
+  --shadow-color: rgba(0, 0, 0, .1);
+  --hover-bg-color: #e5e5fb;
+  --panel-bg-color: #e7e7ee;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins,sans-serif;
+  border: none;
+  color: #27272c;
+  font-size: .9em;
+  z-index: 2;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: var(--panel-bg-color);
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+@keyframes popout {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes popout {
+  from {
+    -webkit-transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media screen and (min-width: 320px) and (max-width: 786px) {
+  #p-top {
+    padding: 2% 5%;
+  }
+
+  .elem {
+    gap: 8%;
+    align-items: center;
+    padding-right: 15%;
+    font-size: 89%;
+    overflow-x: hidden;
+  }
+
+  #panel {
+    overflow: scroll;
+    width: 95vw;
+    height: 70vh;
+    border-radius: 10px;
+  }
+
+  .bubble {
+    height: 65px;
+    width: 65px;
+  }
+
+  .link{
+    font-size: 3.2vw;
+  }
+}
+
+@media only screen and (width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  #p-top {
+    padding: 2% 5%;
+  }
+
+  .elem {
+    font-size: 3.3vw;
+  }
+  .link{
+    font-size: 3.2vw;
+  }
+}

@@ -1,0 +1,36 @@
+#main {
+  background-color: rgb(155, 184, 155);
+}
+#panel {
+  background-color: #fff;
+}
+
+#p-top {
+  color: #fff;
+  background-color: rgb(72, 104, 72);
+}
+
+.box {
+  color: rgb(18, 119, 57);
+  background-color: #fff;
+}
+
+.bubble {
+  color: #fff;
+  background-color: rgb(72, 104, 72);
+}
+
+.bubble:active,
+.bubble:hover {
+  background-color: rgb(50, 75, 50);
+}
+
+
+.btn {
+  color: #fff;
+  background-color: rgb(72, 104, 72);
+}
+.btn:hover,
+.btn:focus {
+  background-color: rgb(50, 75, 50);
+}

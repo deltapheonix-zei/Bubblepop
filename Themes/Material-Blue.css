@@ -1,0 +1,42 @@
+h1 {
+  color: #CBDCED;
+}
+
+#main {
+  background-color: #CBDCED;
+}
+
+#panel {
+  background-color: #6c85a0;
+}
+
+#p-top {
+  color: #CBDCED;
+  background-color: #323D42;
+}
+
+.box {
+  color: #323D42;
+  background-color: #CBDCED;
+}
+
+.bubble {
+  color: #323D42;
+  background-color: #CBDCED;
+}
+
+.bubble:hover {
+  background-color: #38524C;
+  color: #CBDCED;
+}
+
+.btn {
+  color: #CBDCED;
+  background-color: #323D42;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #CBDCED;
+  color: #323D42;
+}

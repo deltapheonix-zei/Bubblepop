@@ -1,0 +1,34 @@
+#main {
+  background-color: #676f9d;
+}
+#panel {
+  background-color: #f6efe7;
+}
+
+#p-top {
+  color: #f6efe7;
+  background-color: #424769;
+}
+
+.box {
+  color: #424769;
+  background-color: #fff;
+}
+
+.bubble {
+  color: #f6efe7;
+  background-color: #424769;
+}
+
+.bubble:hover {
+  background-color: #2d3250;
+}
+
+.btn {
+  color: #f6efe7;
+  background-color: #676f9d;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #2d3250;
+}
